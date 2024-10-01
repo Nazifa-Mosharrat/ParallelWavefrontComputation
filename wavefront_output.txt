@@ -1,0 +1,20 @@
+g++ (GCC) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+mpicxx -std=c++20 -I. -I./include -Wall  -O3 -o wavefrontMPI wavefrontMPI.cpp 
+========== Wavefront computation via MPI ==========
+Matrix initialized.
+Sequential computation took 0.523935 seconds.
+Rank 0 took 0.472192 seconds for parallel computation.
+Rank 1 took 0.472166 seconds for parallel computation.
+Rank 2 took 0.472170 seconds for parallel computation.
+Rank 3 took 0.472187 seconds for parallel computation.
+The results of the sequential and MPI computations match.
+Total parallel computation took 0.472192 seconds.
+========== Wavefront computation via FastFlow ==========
+Matrix initialized.
+Sequential computation took 0.823507 seconds.
+parallel computation took 0.221291 seconds.
+The results of the sequential and parallel computations match.
